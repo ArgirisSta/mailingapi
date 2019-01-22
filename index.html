@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Page </title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+  <div class="row">
+    <div class="callout warning text-center">
+      <img src="images/sub.png" width="150">
+      <form action="src/subscribers/add.php" method="POST">
+        <h1>Subscribe</h1>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="submit" value="Subscribe" class="button expanded large">
+      </form>
+      <hr>
+      <img src="images/unsub.png" width="150">
+      <form action="src/subscribers/delete.php" method="POST">
+        <h1>Unsubscribe</h1>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="submit" value="Unsubscribe" class="alert button expanded large">
+      </form>
+      <hr>
+      <img src="images/list.png" width="150">
+      <form action="src/subscribers/get_active_subscribers.php" method="POST" target="_blank">
+        <h1>Active Subscription List</h1>
+        <input type="submit" value="Active Subscription List" class="button expanded large">
+      </form>
+
+    </div>
+  </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

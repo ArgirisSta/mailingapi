@@ -1,0 +1,4 @@
+To run the web app PHP must be installed.
+The files should be moved to the root directory of the webserver
+
+Tested with XAMPP.
